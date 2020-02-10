@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="A simple clock watcher game with some of UX by Sebastian C. @cbastian0">
+    <meta name="description" content="A simple clock watcher game with some of UX by Sebastian C. @someofseb">
     <meta name="keywords"
         content="typing, js, javascript, clock, watcher, game, juego, git, github, html, css, art, time, type, ui, ux" />
     <meta name="og:title" property="og:title" content="Clock watcher by Sebastian Diaz">
-    <meta name="author" content="Sebastian C. @cbastian0" />
+    <meta name="author" content="Sebastian C. @someofseb" />
     <meta name="robots" content="index, follow" />
     <meta property="og:image" content="https://holasebas.github.io/watcher/preview.png">
-    <link rel="me" href="https://twitter.com/cbastian0">
+    <link rel="me" href="https://twitter.com/someofseb">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Clock Watcher</title>
@@ -49,75 +49,74 @@
     <h1 class="d-none">CLOCK WATCHER</h1>
 
     <div class="stage d-flex flex-column">
-        <div class="time d-flex flex-column">
+        <div class="time d-flex flex-column mx-auto">
             <span>TIME TO REACH</span>
             <p id="time">00'00</p>
 
-            <div class="time_arrow"></div>
         </div>
-        <div class="screen d-flex flex-column flex-sm-row justify-content-end align-items-center">
-            <div class="col-12 col-sm-4 d-none d-sm-block p-0"></div>
 
-            <div class="col-12 col-sm-4 p-0">
-                <div id="timer" class="timer d-flex justify-content-center align-items-center">
-                    <p>
-                        <span id="timer_sec">00</span>
-                        <span>'</span>
-                        <span id="timer_mill">00</span>
-                    </p>
+        <!-- <div class="col-12 col-sm-4 d-none d-sm-block p-0"></div> -->
 
-                    <div id="timer_ret" class="timer_ret d-flex flex-wrap">
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
 
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
+        <div id="timer" class="timer d-flex justify-content-center align-items-center mx-auto">
+            <p>
+                <span id="timer_sec">00</span>
+                <span>'</span>
+                <span id="timer_mill">00</span>
+            </p>
 
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
-                        <div class="ret"></div>
+            <div id="timer_ret" class="timer_ret d-flex flex-wrap">
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
 
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
 
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
-                        <div class="ret d-none d-sm-block"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
+                <div class="ret"></div>
 
-                        <div id="myscore" class="myscore">
-                            <div id="myscore_message" class="myscore_message"></div>
-                            <div id="myscore_score" class=""></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
 
-            <div class="col-12 col-sm-4 p-0">
-                <div id="instructions" class="instructions  p-2 ">
-                    <p class="d-none d-sm-block">Press <span class="cta cta--small">STOP</span> when <br> the timer
-                        reaches your <br> given time.</p>
-                    <p class="d-block d-sm-none">Press <span class="cta cta--small">STOP</span> when the timer <br>
-                        reaches your given time.</p>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
+                <div class="ret d-none d-sm-block"></div>
 
-                    <div class="instructions_arrow"></div>
+                <div id="myscore" class="myscore">
+                    <div id="myscore_message" class="myscore_message"></div>
+                    <div id="myscore_score" class=""></div>
                 </div>
             </div>
         </div>
-        <div id="ui" class="d-flex justify-content-center align-items-center">
-            <div id="start" class="cta cta--enable cta--disabled mx-auto my-2 my-sm-5">
+
+
+
+        <div id="instructions" class="instructions mx-auto p-2 ">
+            <!-- <p class="d-none d-sm-block">Press <span class="cta cta--small">STOP</span> when <br> the timer
+                        reaches your <br> given time.</p> -->
+            <p class="d-block d-sm-block">Press <span class="cta cta--small">STOP</span> when the timer <br>
+                reaches your given time.</p>
+
+            <!-- <div class="instructions_arrow"></div> -->
+        </div>
+
+
+        <div id="ui" class="ui mx-auto d-flex justify-content-center">
+            <div id="start" class="cta cta--enable cta--disabled mx-auto my-2">
                 START
                 <div class="cta_corner"></div>
                 <div class="cta_corner"></div>
@@ -125,7 +124,7 @@
                 <div class="cta_corner"></div>
             </div>
 
-            <div id="stop" class="cta cta--enable mx-auto my-2 my-sm-5 d-none">
+            <div id="stop" class="cta cta--enable mx-auto my-2 d-none">
                 STOP
                 <div class="cta_corner"></div>
                 <div class="cta_corner"></div>
@@ -133,7 +132,7 @@
                 <div class="cta_corner"></div>
             </div>
 
-            <div id="again" class="cta cta--enable mx-auto my-2 my-sm-5 d-none">
+            <div id="again" class="cta cta--enable mx-auto my-2 d-none">
                 AGAIN
                 <div class="cta_corner"></div>
                 <div class="cta_corner"></div>
@@ -141,15 +140,16 @@
                 <div class="cta_corner"></div>
             </div>
         </div>
+
     </div>
 
     <div id="shares" class="shares mt-auto mx-auto my-3">
         <a class="twitter-share-button"
             href="https://twitter.com/intent/tweet?text=Clock watcher https://holasebas.github.io/watcher"></a>
-        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/cbastian0"></a>
+        <a class="twitter-follow-button" data-show-count="false" href="https://twitter.com/someofseb"></a>
     </div>
 
-    
+
 
     <a href="https://github.com/holasebas/watcher" target="_blank">
         <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true" style="position:fixed;right:0;top:0">
