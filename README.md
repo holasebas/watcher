@@ -6,4 +6,4 @@ https://holasebas.github.io/watcher/
 
 ![](https://holasebas.github.io/watcher/preview.png)
 
-[What's next ? ](https://twitter.com/cbastian0)
+[What's next ? ](https://twitter.com/someofseb)
