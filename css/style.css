@@ -6,6 +6,9 @@
     *{
         font-family: writer
     }
+    p{
+        margin: 0px;
+    }
     body,html{
         height: 100%;
         width: 100%;
@@ -74,7 +77,7 @@
     .instructions{
         position: relative;
         width: 320px;
-        height: 320px;
+
         /* opacity: 0; */
         -webkit-transition: opacity 1s;
         -o-transition: opacity 1s;
@@ -257,10 +260,10 @@
             -ms-flex-align: center;
                 align-items: center;
         width: 320px;
-        height: 320px;
-        top: 0px;
+        height: 100px;
+        /* top: 0px;
         right: 0;
-        position: absolute;
+        position: absolute; */
         font-size: 46px;
       
         color: #333;
@@ -324,10 +327,11 @@
         pointer-events: none;
      
     }
-    /* #ui{
+    .ui{
+        position: relative;
         height: 100px;
-        border: 1px solid red;
-    } */
+        width: 320px;
+    }
     
     @media (max-width: 576px) { 
      
@@ -350,9 +354,6 @@
         .time_arrow{
             display: none;
         }
-        .instructions_arrow{
-            display: none;
-        }
         .screen{
             margin-top: 0px;
             height: inherit;
@@ -367,7 +368,7 @@
                 transform: scale(0.8); */
         }
         .instructions{
-            width: 100%;
+            width: 320px;
             height: 75px;
             padding: 0px !important;
             margin-top: 100px;
